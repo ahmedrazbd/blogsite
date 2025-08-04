@@ -1,1 +1,46 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8fafc;
+}
 
+.hero-section {
+    background: linear-gradient(90deg, #0d6efd 0%, #6ea8fe 100%);
+    color: #fff;
+    border-radius: 0 0 2rem 2rem;
+    margin-bottom: 2rem;
+}
+
+.card {
+    border: none;
+    border-radius: 1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(13, 110, 253, 0.15);
+}
+
+.card-img-top {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-weight: 700;
+}
+
+footer {
+    border-radius: 2rem 2rem 0 0;
+}
+
+@media (max-width: 767px) {
+    .hero-section {
+        border-radius: 0 0 1rem 1rem;
+    }
+    footer {
+        border-radius: 1rem 1rem 0 0;
+    }
+}
